@@ -1,4 +1,5 @@
 import cookie from "cookie";
+import { API_URL } from "../../utils/urls";
 
 export default async (req, res) => {
  try{   if (req.method === "POST") {
@@ -9,7 +10,7 @@ export default async (req, res) => {
             "password": password,
         }
         console.log(regInfo)
-        const regRes = await fetch("http://localhost:1337/auth/local/register", {
+        const regRes = await fetch(`${API_URL}/auth/local/register`, {
             method: "POST",
             headers: {
                 "Accept": "application/json",

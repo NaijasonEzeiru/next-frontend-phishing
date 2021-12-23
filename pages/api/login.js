@@ -1,4 +1,5 @@
 import cookie from "cookie";
+import { API_URL } from "../../utils/urls";
 
 export default async (req, res) => {
   try{  if(req.method === "POST") {
@@ -8,7 +9,7 @@ export default async (req, res) => {
             "password": password
         }
 
-       const login = await fetch("http://localhost:1337/auth/local", {
+       const login = await fetch(`${API_URL}/auth/local`, {
             method: "POST",
             headers: {
                 "Accept": "application/json",

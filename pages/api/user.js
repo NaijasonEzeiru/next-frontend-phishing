@@ -1,4 +1,5 @@
 import cookie from "cookie";
+import { API_URL } from "../../utils/urls";
 
 export default async (req, res) => {
     if(req.method === "GET") {  
@@ -9,7 +10,7 @@ export default async (req, res) => {
 
        const {token} = cookie.parse(req.headers.cookie);
        console.log(token)
-       const strapiRes = await fetch("http://localhost:1337/users/me", {
+       const strapiRes = await fetch(`${API_URL}/users/me`, {
            method: "GET",
            headers: {
                Authorization: `Bearer ${token}`,
