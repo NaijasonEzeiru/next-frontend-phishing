@@ -2,7 +2,7 @@ import Contain from "../component/Contain";
 import Link from "next/link";
 import React, { useContext, useEffect } from "react";
 import Details from "../component/Details";
-import styles from "../styles/SignUp.module.css";
+import styles from "../styles/SignUP.module.css";
 import { useRouter } from "next/router";
 import { useForm } from "react-hook-form"
 import * as Yup from "yup";
