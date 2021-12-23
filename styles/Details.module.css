@@ -1,0 +1,21 @@
+.details {
+    width: 190px;
+  }
+
+  .details p {
+    text-align: center;
+  }
+  
+  .panel {
+    text-align: center;
+    padding-top: 10px;
+    vertical-align: middle;
+    border-bottom: 4px solid white;
+    min-height: 60px;
+  }
+  
+  @media screen and (max-width: 860px) {
+    .details {
+      display: none;
+    }
+  }

@@ -1,0 +1,15 @@
+.content {
+    flex: auto;
+    border-left: 4px solid white;
+    min-height: 75vh;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+    overflow-x: auto;
+  }
+  
+  @media screen and (max-width: 860px) {
+    .content {
+      border: 0px;
+    }
+  }
