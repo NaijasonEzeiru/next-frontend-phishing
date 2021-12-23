@@ -11,7 +11,7 @@ export const AuthProvider = ({ children }) => {
     useEffect(() => checkUserLoggedIn(), [])
 
     const signup = async (user) => {
-        const res = await fetch("http://localhost:3000/api/signup", {
+        const res = await fetch("https://naijason.vercel.app/api/signup", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -29,7 +29,7 @@ export const AuthProvider = ({ children }) => {
     }
 
     const login = async ({ username: identifier, password}) => {
-        const res = await fetch("http://localhost:3000/api/login", {
+        const res = await fetch("https://naijason.vercel.app/api/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -51,7 +51,7 @@ export const AuthProvider = ({ children }) => {
     };
 
     const signout = async () => {
-        const res = await fetch("http://localhost:3000/api/signout", {
+        const res = await fetch("https://naijason.vercel.app/api/signout", {
             method: "POST",
         });
         if (res.ok) {
@@ -61,7 +61,7 @@ export const AuthProvider = ({ children }) => {
     };
 
     const checkUserLoggedIn = async (user) => {
-        const res = await fetch("http://localhost:3000/api/user");
+        const res = await fetch("https://naijason.vercel.app/api/user");
         const data = await res.json();
 
         if (res.ok) {
