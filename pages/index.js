@@ -5,7 +5,7 @@ import Details from '../component/Details'
 import AuthContext from '../component/AuthContext'
 import { useContext } from 'react'
 import Link from 'next/link'
-import styles from "../styles/SignUp.module.css"
+import styles from "../styles/Home.module.css"
 
 export default function Home() {
   const {user} = useContext(AuthContext);

@@ -1,9 +1,9 @@
 import { useContext } from "react";
 import AuthContext from "../component/AuthContext";
-import Contain from "../component/contain";
+import Contain from "../component/Contain";
 import Details from "../component/Details";
 import Main from "../component/Main";
-import withAuth from "../component/withAuth";
+import withAuth from "../component/WithAuth";
 
 const pages= () => {
     const {user} = useContext(AuthContext)

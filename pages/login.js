@@ -7,7 +7,7 @@ import {useContext, useEffect } from "react";
 import Link from "next/link";
 import Main from "../component/Main";
 import AuthContext from "../component/AuthContext";
-import styles from "../styles/SignUp.module.css"
+import styles from "../styles/Login.module.css"
 import { ToastContainer, toast} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
