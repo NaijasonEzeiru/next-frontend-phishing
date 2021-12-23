@@ -4,7 +4,7 @@ import AuthContext from "../component/AuthContext";
 import Contain from "../component/Contain";
 import Details from "../component/Details";
 import Main from "../component/Main";
-import withAuth from "../component/withAuth";
+import withAuth from "../component/WithAuth";
 
 const victims = () => {
 
@@ -12,7 +12,7 @@ const victims = () => {
     const {user} = useContext(AuthContext);
     const userA = [user];
 
-    // route.reload(window.location.pathname)
+ 
 
     const formatDate = (value) => {
         return new Date(value).toLocaleString()

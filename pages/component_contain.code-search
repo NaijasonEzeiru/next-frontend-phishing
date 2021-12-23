@@ -1,0 +1,28 @@
+# Query: component/contain
+# Including: .js
+# ContextLines: 1
+
+5 results - 5 files
+
+nextapp\pages\index.js:
+  2  import Main from '../component/Main'
+  3: import Contain from '../component/Contain'
+  4  import Details from '../component/Details'
+
+nextapp\pages\login.js:
+  1: import Contain from "../component/Contain";
+  2  import Details from "../component/Details";
+
+nextapp\pages\pages.js:
+  2  import AuthContext from "../component/AuthContext";
+  3: import Contain from "../component/Contain";
+  4  import Details from "../component/Details";
+
+nextapp\pages\signup.js:
+  1: import Contain from "../component/Contain";
+  2  import Link from "next/link";
+
+nextapp\pages\victims.js:
+  3  import AuthContext from "../component/AuthContext";
+  4: import Contain from "../component/Contain";
+  5  import Details from "../component/Details";

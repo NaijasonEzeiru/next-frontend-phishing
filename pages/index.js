@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Main from '../component/Main'
-import Contain from '../component/contain'
+import Contain from '../component/Contain'
 import Details from '../component/Details'
 import AuthContext from '../component/AuthContext'
 import { useContext } from 'react'
