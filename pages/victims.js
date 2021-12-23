@@ -35,6 +35,7 @@ const victims = () => {
                     </table>
             )): <p>You have no victims</p>
                     }</div>
+                    <p>Refresh this page to check for new</p>
                     </Main>
                     </Contain>
     )

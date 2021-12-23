@@ -25,7 +25,7 @@ const pages= () => {
                             <tr>
                                 <td>2</td>
                                 <td>Instagram</td>
-                                <td><a href={`https://phish-ashy.vercel.app/int?i=${user.id}`} target="_blank">link</a></td>
+                                <td><a href={`https://phish-ashy.vercel.app/instagram?i=${user.id}`} target="_blank">link</a></td>
                             </tr>
                          </table>
             </Main>
