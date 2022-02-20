@@ -23,7 +23,7 @@ const login = () => {
     const formOptions = { resolver: yupResolver(validationSchema) };
 
     const { register, handleSubmit, formState } = useForm(formOptions);
-    const { errors } = formState;
+    const { errors, isSubmitting } = formState;
 
     useEffect(() => toast.error(error, {toastId: "1"}) [error]);
 
@@ -57,7 +57,7 @@ pauseOnHover
                     <input type="password" name="password" {...register("password")}></input>
                     <span className={styles.error}>{errors.password?.message}</span>
                 </div>
-                <input type="submit" />
+                <input type="submit" disabled={isSubmitting} />
             </form>
             <h5>Do not have an account? please <button><Link href="/signup" ><a className={styles.btn}>Sign up</a></Link></button>
                 </h5> </span> :
