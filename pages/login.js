@@ -57,7 +57,8 @@ pauseOnHover
                     <input type="password" name="password" {...register("password")}></input>
                     <span className={styles.error}>{errors.password?.message}</span>
                 </div>
-                <input type="submit" disabled={isSubmitting} />
+{isSubmitting? <p> Submitting </p> :
+                <input type="submit" disabled={isSubmitting} />}
             </form>
             <h5>Do not have an account? please <button><Link href="/signup" ><a className={styles.btn}>Sign up</a></Link></button>
                 </h5> </span> :
