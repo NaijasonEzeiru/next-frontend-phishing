@@ -24,7 +24,7 @@ const signUp = () => {
     
     const router = useRouter();
     
-    const { register, handleSubmit, formState: { errors }, reset } = useForm({
+    const { register, handleSubmit, formState: { errors, isSubmitting }, reset } = useForm({
         resolver: yupResolver(schema),
     });
 
@@ -72,7 +72,7 @@ pauseOnHover
                     <span className={styles.error}> {errors.confirmPassword?.message}</span>
                 </div>
                 <div>
-                <input type="submit" className={styles.submitButton}/></div>
+                <input disabled={isSubmitting} type="submit" className={styles.submitButton}/></div>
             </form>
             <h5>If you already have an account, <button ><Link href="/login"><a className={styles.btn}>Log in here</a></Link></button></h5> </span> :
             <h2> You are already have an account</h2> }
