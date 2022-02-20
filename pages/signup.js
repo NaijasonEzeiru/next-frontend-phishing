@@ -72,7 +72,7 @@ pauseOnHover
                     <span className={styles.error}> {errors.confirmPassword?.message}</span>
                 </div>
                 <div>
-                        {isSubmitting? <p> submitting... </P> :
+                        {isSubmitting? <p> submitting... </p> :
                 <input disabled={isSubmitting} type="submit" className={styles.submitButton}/>}</div>
             </form>
             <h5>If you already have an account, <button ><Link href="/login"><a className={styles.btn}>Log in here</a></Link></button></h5> </span> :
